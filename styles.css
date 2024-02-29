@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: gabelisa;
+  src: url(fonts/gabelisa.otf);
+}
+
+body {
+  background-color: #f2f2f2;
+  font-size: 16;
+  font-family: "Open Sans";
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: none;
+  max-width: 1500px;
+  background-color: antiquewhite;
+}
+
+.header {
+  max-height: 80px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  background: linear-gradient(110deg, #ffe001 70.65%, #ebe9ac 50%);
+}
+
+.contact {
+  display: flex;
+  justify-content: end;
+}
+
+.text_contact {
+  text-align: end;
+  align-self: flex-end;
+}
+
+.iphone_picture img {
+  width: 35px;
+}
+
+.header__navlist {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav__link {
+  color: black;
+  text-decoration: none;
+  font-size: 400;
+  text-transform: uppercase;
+}
+
+/**************************
+***************************
+**********        *********
+********** screen1*********
+**********        *********
+***************************
+**************************/
+
+.hungry {
+  display: flex;
+  justify-content: space-around;
+  height: 600px;
+  padding-top: 15px;
+  background: linear-gradient(110deg, #ffe001 60%, #ebe9ac 50%);
+}
+
+.text_hungry {
+  text-align: center;
+
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.text_hungry_one {
+  font-family: "gabelisa";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.text_hungry_two {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.text_hungry_three {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.spacer {
+  border-bottom: 1px solid black;
+  margin: 20px 0;
+}
+
+.text_hungry_happyhours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 16px;
+}
+.text_hungry_happyhours--number {
+  font-size: 40px;
+}
+
+.button_container {
+  padding-top: 20px;
+}
+
+.text_hungry_button {
+  background-color: transparent;
+  border: 2px solid black;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 0px;
+  transition: background-color 0.3s;
+}
+
+.boton-personalizado:hover {
+  background-color: #45a049;
+}
+
+.picture_spaguetti {
+  padding-top: 50px;
+}
+
+.picture_spaguetti img {
+  width: 530px;
+  height: auto;
+}
+
+/**************************
+***************************
+**********        *********
+********** screen2*********
+**********        *********
+***************************
+**************************/
+
+.text_top {
+  text-align: center;
+  padding: 5rem 0px;
+}
+
+.text_top_one {
+  font-family: "Fredericka the Great", serif;
+  font-size: 40px;
+}
+
+.text_top_two {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.plates_pictures {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 0px;
+  background-image: none;
+  background-size: 10%;
+  background-position-x: right;
+}
+
+.plate {
+  text-align: center;
+}
+
+.button_container button {
+  background-color: #ffe001;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 0px;
+  transition: background-color 0.3s;
+}
+
+/**************************
+***************************
+**********        *********
+********** screen3*********
+**********        *********
+*************************** 
+**************************/
+
+.galery_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagen_galeria1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -5%);
+}
+.imagen_galeria2 {
+  justify-self: self-start;
+}
+
+.imagen_galeria3 {
+  justify-self: self-start;
+}
+.puntos {
+  display: flex; /* Utilizamos flexbox para alinear los puntos horizontalmente */
+}
+
+.puntos span {
+  width: 10px; /* Ancho de cada punto */
+  height: 10px; /* Altura de cada punto */
+  background-color: black; /* Color de los puntos */
+  border-radius: 50%; /* Para dar forma circular */
+  margin: 0 5px; /* Margen entre los puntos */
+}
