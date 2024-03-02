@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: gabelisa;
-  src: url(fonts/gabelisa.otf);
+  src: url(Assets/fonts/gabelisa.otf);
 }
 
 :root{
@@ -432,6 +432,10 @@ body {
 
 }
 
+.text_top--rem1{
+  padding: 1rem 0px
+}
+
 .form_box{
   display: flex;
   flex-wrap: wrap;
@@ -474,7 +478,7 @@ body {
 
 .footer_container{
   
-  background-image: url(footer_bg.png);
+  background-image: url(Assets/footer/footer_bg.png);
   background-size: cover;
   height: 500px;
   grid-gap: 40px;
