@@ -2,28 +2,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+
 }
+
+
 
 @font-face {
   font-family: gabelisa;
   src: url(fonts/gabelisa.otf);
 }
 
+:root{
+  --yellow: #FBD516
+}
+
 body {
   background-color: #f2f2f2;
   font-size: 16;
-  font-family: "Open Sans";
+  font-family:"Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
 }
 
 .container {
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 50px;
   background-color: none;
-  max-width: 1500px;
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
 }
 
 .header {
@@ -35,18 +40,32 @@ body {
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  background: linear-gradient(110deg, #ffe001 70.65%, #ebe9ac 50%);
+  background: transparent;
 }
 
 .contact {
   display: flex;
   justify-content: end;
+  gap: 1rem;
+  padding: 15px 0;
 }
 
 .text_contact {
   text-align: end;
   align-self: flex-end;
+  
 }
+.text_contact{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.text_contact_number{
+  font-weight: 800;
+  font-size: 26px;
+}
+
 
 .iphone_picture img {
   width: 35px;
@@ -55,12 +74,13 @@ body {
 .header__navlist {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .nav__link {
   color: black;
   text-decoration: none;
+  font-weight: 700;
   font-size: 400;
   text-transform: uppercase;
 }
@@ -73,12 +93,63 @@ body {
 ***************************
 **************************/
 
+.bc_screen1{
+  /* background: linear-gradient(100deg, var(--yellow) 70%, #ebe9ac 50%); */
+
+
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%);
+  background-color: var(--yellow);
+  width: 100%;
+  height: 77%;
+  position: absolute;
+  z-index: -1;
+  clip-path: polygon(0% 0%, 100% 0%, 79% -24%, 69% 100%, 0% 100%);
+}
+.bc1_screen1{
+  background-color: #ebe9ac;
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 77%;
+}
+
+
+.pasta{
+  position: absolute;
+  z-index: 0;
+  top: 16%;
+  left: 55%;
+}
+.leaf{
+  position: absolute;
+  z-index: 0;
+  top: 64%;
+  left: 90%;
+}
+
+.leaf1{
+  position: absolute;
+  z-index: 0;
+  top: 12%;
+  left: 10%;
+}
+
+.tomato{
+  position: absolute;
+  z-index: 0;
+  top: 60%;
+  left: 45%;
+}
+
+
+
 .hungry {
   display: flex;
   justify-content: space-around;
-  height: 600px;
+  
+  height: 650px;
   padding-top: 15px;
-  background: linear-gradient(110deg, #ffe001 60%, #ebe9ac 50%);
+  background: transparent;
 }
 
 .text_hungry {
@@ -92,19 +163,19 @@ body {
   font-family: "gabelisa";
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
+  font-size: 80px;
 }
 
 .text_hungry_two {
   font-family: "Fredericka the Great", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 60px;
+  font-size: 100px;
 }
 
 .text_hungry_three {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 32px;
 }
 
 .spacer {
@@ -117,19 +188,20 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Fredericka the Great", serif;
-  font-weight: 100;
+  font-weight: 500;
   font-style: normal;
-  font-size: 16px;
+  font-size: 24px;
 }
 .text_hungry_happyhours--number {
-  font-size: 40px;
+  font-size: 60px;
+  margin: 0px 15px;
 }
 
-.button_container {
+.button_hungry {
   padding-top: 20px;
 }
 
-.text_hungry_button {
+.button {
   background-color: transparent;
   border: 2px solid black;
   color: rgb(0, 0, 0);
@@ -165,20 +237,43 @@ body {
 ***************************
 **************************/
 
+.container_text{
+  display: flex;
+  justify-content: center;
+}
+.text_top {
+  text-align: center;
+  padding: 3rem 0px;
+  width: 1090px;
+}
+
 .text_top {
   text-align: center;
   padding: 5rem 0px;
+  width: 1000px;
 }
 
-.text_top_one {
+.text_fredericka{
   font-family: "Fredericka the Great", serif;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .text_top_two {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
 }
+
+.background {
+  position: absolute;
+  left: 50%;
+  top: 126%;
+  transform: translate(-50%);
+  width: 100%;
+  height: 100px;
+  z-index: 0;
+  background-color: #E9E7A7; /* Color de fondo con opacidad */
+}
+
 
 .plates_pictures {
   display: flex;
@@ -187,27 +282,40 @@ body {
   background-image: none;
   background-size: 10%;
   background-position-x: right;
+  
 }
 
 .plate {
   text-align: center;
+  z-index: 1;
+  
 }
 
-.button_container button {
-  background-color: #ffe001;
-  border: none;
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 600;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 0px;
-  transition: background-color 0.3s;
+.plate_actions{
+  padding: 15px 0;
 }
+
+.plate__button{
+  
+    background-color: var(--yellow);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0px;
+    transition: background-color 0.3s;
+  
+  
+}
+
 
 /**************************
 ***************************
@@ -217,26 +325,60 @@ body {
 *************************** 
 **************************/
 
+
 .galery_container {
   display: flex;
-  justify-content: space-between;
+  justify-content:  center;
+  gap: 43.9rem;
 }
 
 .imagen_galeria1 {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -5%);
+  transform: translate(-50%, -9%);
+  z-index: 1
+}
+.imagen_galeria1 img {
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.8);
+  width: 1100px;
+  
 }
 .imagen_galeria2 {
   justify-self: self-start;
+  
+}
+.imagen_galeria2 img{
+  width: 600px;
 }
 
 .imagen_galeria3 {
   justify-self: self-start;
 }
-.puntos {
-  display: flex; /* Utilizamos flexbox para alinear los puntos horizontalmente */
+.imagen_galeria3 img{
+  width: 600px;
 }
+
+.puntos {
+  display: flex; 
+  justify-content: center;
+  padding-top: 85px;
+}
+
+.dot{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(189, 189, 189);
+  margin: 7px;
+  display: inline-block;
+}
+#selected{
+  background-color: var(--yellow);
+}
+
+
+
+
 
 .puntos span {
   width: 10px; /* Ancho de cada punto */
@@ -244,4 +386,153 @@ body {
   background-color: black; /* Color de los puntos */
   border-radius: 50%; /* Para dar forma circular */
   margin: 0 5px; /* Margen entre los puntos */
+}
+
+/**************************
+***************************
+**********        *********
+********** screen4*********
+**********        *********
+*************************** 
+**************************/
+
+
+.picures_co{
+
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+
+
+}
+
+.box_two{
+  padding-left: 50px;
+}
+
+.margen{
+  margin: 20px 0;
+}
+
+
+/**************************
+***************************
+**********        *********
+********** screen5*********
+**********        *********
+*************************** 
+**************************/
+
+.reservation{
+  display: flex;
+  justify-content: center;
+  height: 300px;
+
+}
+
+.form_box{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 700px;
+  height: 300px;
+  align-content: space-between;
+}
+
+.form_box input{
+  background-color: transparent;
+  border: 2px solid #ddd;
+  color: black;
+  font-size: 15px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  width: 335px;
+
+}
+
+.form_box button{
+  background-color: var(--yellow);
+  border: none;
+  color: black;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+
+/**************************
+***************************
+**********        *********
+********** footer *********
+**********        *********
+*************************** 
+**************************/
+
+.footer_container{
+  
+  background-image: url(footer_bg.png);
+  background-size: cover;
+  height: 500px;
+  grid-gap: 40px;
+  padding: 40px 100px;
+  font-family:"Montserrat", sans-serif;
+  color: white;
+
+  display: grid;
+  background-color: rgb(32, 21, 21);
+  grid-template-areas:
+    "text contact"
+    "copyright socialmedia";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 60%;
+  
+  
+  
+}
+
+.text_footer{
+ grid-area: text;
+ width: 550px;
+}
+
+.text_footer p{
+  padding-top: 30px;
+}
+
+.copyright_footer{
+  grid-area: copyright;
+  align-self: flex-end;
+  
+}
+
+.contact_footer{
+  grid-area: contact;
+  align-self: flex-end;
+}
+
+
+.content_contact{
+    gap: 15px;
+}
+
+.au{
+  display: flex;
+  align-items: baseline;
+  gap: 30px;
+  padding: 10px 0;
+}
+
+
+.social_media{
+  grid-area: socialmedia;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+.pictures_sm img{
+  padding: 0px 7px;
 }
